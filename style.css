@@ -160,7 +160,10 @@ span{
       border-radius: 90px;
       display: inline;
   }
-  
+  musicDiv
+  {
+    font-size: 10px;
+  }
 
 
   
