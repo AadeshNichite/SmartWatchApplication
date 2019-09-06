@@ -38,7 +38,7 @@
                                                    <div class="innerRectangle">
                                                        <div class="mainDiv">
                                                                 <div class="col-sm 12"><center><span class="time">Time</span></center></div>
-                                                                <br><br><h2><center><h1 id="data">10:05</center></h1></h2><br>
+                                                                <br><br><h2><center><h1 id="currentTime">10:05</center></h1></h2><br>
                                                                 <div class="col-sm name"><h7>03:09
                                                                     Rainy</h7>
                                                                 </div>
@@ -46,14 +46,19 @@
                                                       
 
                                                         <div class="musicDiv">
-                                                            
-                                                                <span>Aadesh Music</span>
+                                                                <div class="playMusic">
+                                                                        <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
+                                                                        width="217" height="230" frameborder="0" allowtransparency="true"
+                                                                        allow="encrypted-media"></iframe> 
+                                                                </div>
                                                         </div>
                                                             
                                                       
                                                         <div class="messageDiv">
-                                                            
-                                                                <span>Aadesh Message</span>
+                                                                <div class="col-sm 12"><center>MessageBox</center></div>
+                                                                <div class="sms">
+                                                                <h id="sms"></h>
+                                                                </div>
                                                         </div>
                                                         <div class="timeDiv">
                                                             
@@ -76,9 +81,7 @@
                                                 
                                                 
                                                 <button class="submit" id="music">🎵</button>   
-                                               <button class="submit1" id="message">💬</button>
-
-                                                
+                                                <button class="submit1" id="message">💬</button>                                                
                                                 <button class="submit2" id="time">🕔</button>
                                                                                                                
                                             </div>

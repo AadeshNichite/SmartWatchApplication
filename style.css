@@ -81,10 +81,6 @@ span{
   }
   .innerRectangle
   {
-
-    /* justify-content: center;
-    align-items: center;
-    display: flex; */
     padding: 10;
     margin: 10;
     height: 95%;
@@ -113,10 +109,7 @@ span{
   
   .lowerRectangle
   {
-      /* justify-content: center;
-    align-items: center;
-    display: flex; */
-     height: 60%;
+    height: 60%;
     width: 100%;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -136,34 +129,34 @@ span{
   }
   .submit
   {
-      /* background-size: 0%; */
-      margin-left: 0.5vw;
-      margin-top: 0.8vh;
+      
+      margin-left: 4.2vh;
       background-color: white;
       border-radius: 90px;
       display: inline;
   }
   .submit1
   {
-      /* background-size: 0%; */
       background-color: white;
       border-radius: 90px;
       display: inline;
-      margin-left: 2.2vw;
+      /* margin-left: 2.2vw; */
   }
   .submit2
   {
-      /* background-size: 0%; */
-      /* margin-right: 0.5vw; */
-      margin-left: 2.4vw;
       background-color: white;
       border-radius: 90px;
       display: inline;
   }
-  musicDiv
-  {
-    font-size: 10px;
+  .messageDiv{
+      background-color: white;
+      height: 35vh;
+      
   }
-
+  #player
+  {
+      
+    border-radius: 5%;
+  }
 
   
