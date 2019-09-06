@@ -1,108 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-        <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm l">
-                            <text><span>Smart </span> Watch</text>
-                    </div>
-                    <div class="col-sm r">
-                            <div class="row upper">
-                                        <div class="col-sm upperLeft">
-                                      
-                                        </div>
-                                        <div class="col-sm upperMid">
-                                                 <div class="UpperRectangle">
-                                                 </div>
-                                        </div>
-                                        <div class="col-sm upperEnd">
-                                          
-                                        </div>
-                                 
-                            </div>
-                            <div class="row middle">
-                                    <div class="col-sm rightMiddle">
-                                      
-                                    </div>
-                                    <div class="col-sm MidMiddle">
-                                             <div class="rectangle">
-                                                   <div class="innerRectangle">
-                                                       <mainDiv>
-                                                                <div class="col-sm 12"><center><span class="time">Time</span></center></div>
-                                                                <br><br><h2><center><h1 id="data">10:05</center></h1></h2><br>
-                                                                <div class="col-sm name"><h7>03:09
-                                                                    Rainy</h7>
-                                                                </div>
-                                                        </mainDiv>
-                                                        <div class="myDiv hidden">
+:root{
+    --color-1:rgb(0, 204, 255);
+    --color-2:white; 
+}
+span{
+    color: white;
+}
+.row{
+    height: 100vh;
+}
+.col-sm.l
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 204, 255);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+.col-sm.r
+{
+    margin: 0;
+    padding: 0;
+    background-color: white;
 
-                                                                <div class="col-sm 12"><center><span class="time">Time</span></center></div>
-                                                                <br><br><h2><center><h1 id="data">10:05</center></h1></h2><br>
-                                                                <div class="col-sm name"><h7>03:09
-                                                                    Rainy</h7>
-                                                                </div>
-                                                            
-                                                        </div>
-                                                        <messageDiv style="visibility: hidden">
-                                                            
-                                                                Aadesh Message
-                                                        </messageDiv>
-                                                        <timeDiv style="visibility: hidden">
-                                                            
-                                                                Aadesh Message
-                                                        </timeDiv>
-                                                     </div>
-                                            </div>
-                                    </div>
-                                    <div class="col-sm leftMiddle">
-                                                
-                                    </div>
-                                            
-                            </div>
-                            <div class="row lower">
-                                    <div class="col-sm lowerLeft">
-                                      
-                                    </div>
-                                    <div class="col-sm lowerMid">
-                                            <div class="lowerRectangle">
-                                                
-                                                
-                                                <button class="submit" id="music">🎵</button>   
-                                               <button class="submit1" id="message">💬</button>
-
-                                                
-                                                <button class="submit2" id="time">🕔</button>
-                                                                                     
-                                              
-                                            </div>
-                                        
-                                    </div>
-                                    <div class="col-sm lowerEnd">
-                                      
-                                    </div>
-                            </div>
-                    </div>
-               </div>
-        </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+}
+.row.upper
+{
+    margin: 0;
+    padding: 0;
+    height: 32%; 
+}
+.row.middle
+{
+    margin: 0;
+    padding: 0;
+    height: 37%;
+}
+.row.lower
+{
+    margin: 0;
+    padding: 0;
+    height: 31%;
+}
+.col-sm.rightMiddle {
+    margin: 0;
+    padding: 0;
+    height: 100%;    
+    background-color: white;
+  }
+  .col-sm.MidMiddle {
+    margin: 0;
+    padding: 0;
+    height: 100%;  
+    border-color: azure;
     
-</body>
-<script src="SmartWatchApplication.js"></script>
-</html>
+  }
+  .col-sm.leftMiddle 
+  {
+    margin: 0;
+    padding: 0;
+    height: 100%;    
+    background-color: white;
+  }
+  .row.main
+  {
+    margin: 0;
+    padding: 0;
+
+  }
+  .rectangle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: gray; 
+  }
+  .innerRectangle
+  {
+
+    /* justify-content: center;
+    align-items: center;
+    display: flex; */
+    padding: 10;
+    margin: 10;
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    background-color: black;
+
+  }
+  h2
+  {
+      background-color: white;
+  }
+  .col-sm.name
+  {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+  }
+  h7
+  {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  .lowerRectangle
+  {
+      /* justify-content: center;
+    align-items: center;
+    display: flex; */
+     height: 60%;
+    width: 100%;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: black; 
+  }
+  .UpperRectangle
+  {
+      justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    margin-top: 13vh;
+     height: 60%;
+    width: 100%;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: black; 
+  }
+  .submit
+  {
+      /* background-size: 0%; */
+      margin-left: 0.5vw;
+      margin-top: 0.8vh;
+      background-color: white;
+      border-radius: 90px;
+      display: inline;
+  }
+  .submit1
+  {
+      /* background-size: 0%; */
+      background-color: white;
+      border-radius: 90px;
+      display: inline;
+      margin-left: 2.2vw;
+  }
+  .submit2
+  {
+      /* background-size: 0%; */
+      /* margin-right: 0.5vw; */
+      margin-left: 2.4vw;
+      background-color: white;
+      border-radius: 90px;
+      display: inline;
+  }
+  
+
+
+  
