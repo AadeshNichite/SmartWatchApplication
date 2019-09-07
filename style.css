@@ -51,13 +51,13 @@ span{
     margin: 0;
     padding: 0;
     height: 100%;    
-    background-color: white;
+    background-color:var( --color-2);
   }
   .col-sm.MidMiddle {
     margin: 0;
     padding: 0;
     height: 100%;  
-    border-color: azure;
+    border-color:var( --color-2);
     
   }
   .col-sm.leftMiddle 
@@ -65,7 +65,7 @@ span{
     margin: 0;
     padding: 0;
     height: 100%;    
-    background-color: white;
+    background-color: var( --color-2);
   }
   .row.main
   {
@@ -95,11 +95,11 @@ span{
   }
   h2
   {
-      background-color: white;
+      background-color: var( --color-2);
   }
   .col-sm.name
   {
-    background-color: white;
+    background-color: var( --color-2);
     justify-content: center;
     align-items: center;
     display: flex; 
@@ -135,20 +135,20 @@ span{
   {
       
       margin-left: 5vh;
-      background-color: white;
+      background-color: var( --color-2);
       border-radius: 90px;
       display: inline;
       margin-top: 0.5vh;
   }
   .submit1
   {
-      background-color: white;
+      background-color: var( --color-2);
       border-radius: 90px;
       display: inline;
   }
   .submit2
   {
-      background-color: white;
+      background-color: var( --color-2);
       border-radius: 90px;
       display: inline;
   }
