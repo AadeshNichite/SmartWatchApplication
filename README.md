@@ -1,5 +1,5 @@
 # Smart Watch Application
-objective:Objective of this application is to give time and additional features.
+Objective:Objective of this application is to give time and additional features.
 
    This Application is developed using html,css,javascript and Jquery.
    It is develop to show the time,stopwatch and music player and Messages.
