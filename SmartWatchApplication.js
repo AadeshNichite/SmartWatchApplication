@@ -5,12 +5,14 @@ $(document).ready(function(){
     $(".messageDiv").hide();
     $(".musicDiv").hide();
     $(".timeDiv").hide();
+    $(".playMusic").hide();
     
     $("#message").click(function(){
         $(".mainDiv").hide();
         $(".musicDiv").hide();
         $(".timeDiv").hide();
         $(".playMusic").hide();
+        $(".sms0").hide();
        if($(".messageDiv").show() && $(".sms").show())
        {
         const msg = [
@@ -27,15 +29,15 @@ $(document).ready(function(){
         //     var temp=document.getElementById("sms1").innerHTML=msg[i].name;
         //     console.log(temp);
         // }
-        // document.getElementById("name0").innerHTML=msg[0].name;
-        // document.getElementById("name1").innerHTML=msg[1].name;
-        // document.getElementById("name2").innerHTML=msg[2].name;
-        // document.getElementById("name3").innerHTML=msg[3].name;
-        // document.getElementById("name4").innerHTML=msg[4].name;
+        document.getElementById("name0").innerHTML=msg[0].name;
+        document.getElementById("name1").innerHTML=msg[1].name;
+        document.getElementById("name2").innerHTML=msg[2].name;
+        document.getElementById("name3").innerHTML=msg[3].name;
+        document.getElementById("name4").innerHTML=msg[4].name;
     
 
         
-        
+        // $(".sms0").hide();
         document.getElementById("sms0").innerHTML=msg[0].sms;
         document.getElementById("sms1").innerHTML=msg[1].sms;
         document.getElementById("sms2").innerHTML=msg[2].sms;
@@ -44,10 +46,15 @@ $(document).ready(function(){
 
       
        };
-       $(".sms0").hide();
+       
        
       
     });
+    // if($("#sms0").click(function())
+    //    {
+    //     $(".sms0").show();
+
+    //    });
     
     
         var today = new Date();
