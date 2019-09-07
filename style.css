@@ -188,4 +188,7 @@ span{
       margin: 0;
       padding: 0;
   }
- 
+  #player
+  {
+      border-radius: 5px;
+  }
