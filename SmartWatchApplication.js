@@ -18,9 +18,9 @@ $(document).ready(function(){
         const msg = [
             {  name:"Aadesh",sms: "hii..."},
             {  name:"Sandesh",sms: "where are u??"},
-            {  name:"Kedar",sms: "I am in benglore"},
-            {  name:"Sandip",sms: "ok..."},
-            {  name:"Ashish",sms: "Come ASAP.."}
+            {  name:"Kedar",sms: "hello"},
+            {  name:"Sandip",sms: "How are u?"},
+            {  name:"Ashish",sms: "Hi.."}
         
         ];
         document.getElementById("name0").innerHTML=msg[0].name;
