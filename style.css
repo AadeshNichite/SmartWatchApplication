@@ -130,7 +130,7 @@ span{
   .submit
   {
       
-      margin-left: 4.2vh;
+      margin-left: 4.5vh;
       background-color: white;
       border-radius: 90px;
       display: inline;
@@ -150,13 +150,39 @@ span{
   }
   .messageDiv{
       background-color: white;
-      height: 35vh;
+      height: 3vh;
+      display: none;
       
+  }
+  .timeDiv{
+    display: none;
+  }
+  h8
+  {
+      margin-left: 10;
+      height: 2vh;
+      width:20px;
   }
   #player
   {
       
     border-radius: 5%;
   }
+  .sub
+  {
+    border-radius: 10px;
+    margin-left: 7%;
+  }
+  .sms{
+      
+    border-radius: 5px;
+      height: 31.5vh;
+  }
+  .smallRect
+  {
 
-  
+    border-radius: 10px;
+    background-color: gray; 
+
+  }
+ 

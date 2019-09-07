@@ -7,24 +7,12 @@ $(document).ready(function(){
     $(".musicDiv").hide();
     $(".timeDiv").hide();
     
-        var today = new Date();
-        var time1 = (
-        today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-        )
-        document.getElementById("currentTime").innerHTML = time1;
-        
-    $("#music").click(function(){
-    $(".musicDiv").show();
-      $(".mainDiv").hide();
-      $(".mainDiv").hide();
-      $(".timeDiv").hide();
-      $(".sms2").hide();
-      
-    });
-       
-      $("#message").click(function(){
+    $("#message").click(function(){
         $(".mainDiv").hide();
-       if($(".messageDiv").show())
+        $(".musicDiv").hide();
+        $(".timeDiv").hide();
+        $(".playMusic").hide();
+       if($(".messageDiv").show() && $(".sms").show())
        {
         const msg = [
             {  sms: "hii..."},
@@ -34,19 +22,48 @@ $(document).ready(function(){
             {  sms: "Come ASAP.."}
         
         ];
-        document.getElementById("sms").innerHTML=msg.sms;
+        document.getElementById("sms1").innerHTML=msg[0].sms;
+        document.getElementById("sms2").innerHTML=msg[1].sms;
+        document.getElementById("sms3").innerHTML=msg[2].sms;
+        document.getElementById("sms4").innerHTML=msg[3].sms;
+        document.getElementById("sms5").innerHTML=msg[4].sms;
+        console.log(k);
+        console.log(h);
       
        };
-        $(".musicDiv").hide();
-        $(".timeDiv").hide();
+      
     });
-    $("#time").click(function(){
-        $(".mainDiv").hide();
-        $(".timeDiv").show();
-        $(".messageDiv").hide();
-          $(".musicDiv").hide();
+   
+    
+        var today = new Date();
+        var time1 = (
+        today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+        )
+        document.getElementById("currentTime").innerHTML = time1;
+
+        $("#music").click(function(){
+            $(".musicDiv").show();
+            $(".playMusic").show();
+              $(".mainDiv").hide();
+              $(".mainDiv").hide();
+              $(".timeDiv").hide();
+              $(".sms").hide();
+              
+            });
+
+            $("#time").click(function(){
+                $(".mainDiv").hide();
+                $(".timeDiv").show();
+                $(".messageDiv").hide();
+                  $(".musicDiv").hide();
+                  $(".sms").hide();
+              });
         
-      });
+       
+    
   });
-  
+ 
+
+
+
 
