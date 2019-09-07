@@ -1,9 +1,11 @@
 :root{
     --color-1:rgb(0, 204, 255);
     --color-2:white; 
+    --color-outer:rgb(63, 61, 61);
+    --color-OuterRec: rgb(77, 74, 74);
 }
 span{
-    color: white;
+    color:var( --color-2);
 }
 .row{
     height: 100vh;
@@ -23,7 +25,8 @@ span{
 {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: var( --color-2);
+
 
 }
 .row.upper
@@ -77,16 +80,17 @@ span{
      height: 100%;
     width: 100%;
     border-radius: 10px;
-    background-color: gray; 
+    background-color: var(--color-outer); 
   }
   .innerRectangle
   {
     padding: 10;
-    margin: 10;
-    height: 95%;
-    width: 95%;
+    margin: 20;
+    height: 88%;
+    width: 88.5%;
     border-radius: 10px;
     background-color: black;
+    bo
 
   }
   h2
@@ -113,7 +117,7 @@ span{
     width: 100%;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-    background-color: black; 
+    background-color: var( --color-OuterRec); 
   }
   .UpperRectangle
   {
@@ -125,15 +129,16 @@ span{
     width: 100%;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
-    background-color: black; 
+    background-color: var( --color-OuterRec); 
   }
   .submit
   {
       
-      margin-left: 4.5vh;
+      margin-left: 4.9vh;
       background-color: white;
       border-radius: 90px;
       display: inline;
+      margin-top: 0.5vh;
   }
   .submit1
   {
@@ -149,9 +154,9 @@ span{
       display: inline;
   }
   .messageDiv{
-      background-color: white;
       height: 3vh;
       display: none;
+      
       
   }
   .timeDiv{
@@ -163,11 +168,7 @@ span{
       height: 2vh;
       width:20px;
   }
-  #player
-  {
-      
-    border-radius: 5%;
-  }
+ 
   .sub
   {
     border-radius: 10px;
@@ -176,7 +177,8 @@ span{
   .sms{
       
     border-radius: 5px;
-      height: 31.5vh;
+      height: 28vh;
+      overflow: auto;
   }
   .smallRect
   {
@@ -184,5 +186,9 @@ span{
     border-radius: 10px;
     background-color: gray; 
 
+  }
+  .navbar{
+      margin: 0;
+      padding: 0;
   }
  
