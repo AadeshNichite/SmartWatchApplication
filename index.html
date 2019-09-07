@@ -1,3 +1,7 @@
+<!-- Author:Aadesh Nichite
+Project:Smart Watch Application using html,css,javascript,jQuery and bootstrap
+Description:Smart Watch Application which shows the current time and also having music,
+message box and stopwatch facility -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,135 +13,103 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
         <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm l">
-                            <text><span>Smart </span> Watch</text>
+            <div class="row">
+    <!-- left side of application-->
+                <div class="col-sm l">
+                    <text><span>Smart </span> Watch</text>
+                </div>
+    <!-- right side of application -->
+                <div class="col-sm r">
+     <!-- upper row devided using bootstrap -->
+                    <div class="row upper">
+                         <div class="col-sm upperLeft">
+                                      
+                        </div>
+                        <div class="col-sm upperMid">
+                            <div class="UpperRectangle">
+                             </div>
+                         </div>
+                        <div class="col-sm upperEnd">
+                        </div>           
                     </div>
-                    <div class="col-sm r">
-                            <div class="row upper">
-                                        <div class="col-sm upperLeft">
-                                      
-                                        </div>
-                                        <div class="col-sm upperMid">
-                                                 <div class="UpperRectangle">
-                                                 </div>
-                                        </div>
-                                        <div class="col-sm upperEnd">
-                                          
-                                        </div>
-                                 
-                            </div>
-                            <div class="row middle">
-                                    <div class="col-sm rightMiddle">
-                                      
-                                    </div>
-                                    <div class="col-sm MidMiddle">
-                                             <div class="rectangle">
-                                                   <div class="innerRectangle">
-                                                       <div class="mainDiv">
-                                                                <div class="col-sm 12"><center><span class="time">Time</span></center></div>
-                                                                <br><br><h2><center><h1 id="currentTime">10:00</center></h1></h2><br>
-                                                                <div class="col-sm name"><h7>07:09
-                                                                    Rainy</h7>
-                                                                </div>
-                                                        </div>
+    <!-- Middle row devided using bootstrap -->        
+                     <div class="row middle">
+                         <div class="col-sm rightMiddle">
+                         </div>
+                 <!-- Middle div which is body of the SmartWatch -->
+                         <div class="col-sm MidMiddle">
+                             <div class="rectangle">
+                                <div class="innerRectangle">
+                                    <!-- Main Screen -->
+                                     <div class="mainDiv">
+                                         <div class="col-sm 12">
+                                             <center><span class="time">Time</span></center>
+                                            </div>
+                                            <br><br>
+                                            <h2><center><h1 id="currentTime">10:00</center></h1></h2>
+                                            <br>
+                                            <div class="col-sm name"><h7>07:09 Rainy</h7>
+                                             </div>
+                                         </div>
                                                       
-
-                                                        <div class="musicDiv">
-                                                                <div class="col-sm 12"><center><b><span>Music</span></b></center></div>
-                                                                <div class="playMusic">
-                                                                        <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
-                                                                        width="202" height="185" frameborder="0" allowtransparency="true"
-                                                                        allow="encrypted-media"></iframe> 
-                                                                </div>
-                                                        </div>
+                                    <!-- Music Div scree -->
+                                     <div class="musicDiv">
+                                        <div class="col-sm 12"><center><b><span>Music</span></b></center></div>
+                                        <div class="playMusic">
+                                            <iframe id="player" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXJfnUiYjUKT"
+                                            width="202" height="185" frameborder="0" allowtransparency="true"
+                                            allow="encrypted-media"></iframe> 
+                                        </div>
+                                    </div>
                                                             
-                                                      
-                                                        <div class="messageDiv">
-                                                                <div class="col-sm 12"><center><b><span>Message Box</span></b></center></div>
-                                                                <div class="sms">
-                                                                        <div class="smallRect"><span id="name0"></span>-<br><span id="sms0"></span><br></div><br>
-                                                                        <div class="smallRect"><span id="name1"></span>-<br><span id="sms1"></span><br></div><br>
-                                                                        <div class="smallRect"><span id="name2"></span>-<br><span id="sms2"></span><br></div><br>
-                                                                        <div class="smallRect"><span id="name3"></span>-<br><span id="sms3"></span><br></div><br>
-                                                                        <div class="smallRect"><span id="name4"></span>-<br><span id="sms4"></span><br></div><br>
-                                                                    </div>
-
-
-                                                                    <!-- <div class="sms0">
-                                                                            <div class="smallRect"><span id="sms0"></span><br></div><br>
-                                                                        </div> -->
-
-                                                                 <!-- <div class="smallRect"><span id="sms1"></span><span id="sms2"></span></div><br>
-                                                               <div class="smallRect"><span id="sms3"></span><br></div><br>
-                                                               <div class="smallRect"><span id="sms4"></span><span id="sms5"></span></div>  -->
-                                                                    
-                                                               <!-- <div class="smallRect"><span id="name1"></span><span id="sms1"></span></div> -->
-                                                                <!-- <div class="originalSms">        
-                                                              
-
-                                                                <div class="sms1">
-                                                                        <div class="smallRect"><span id="sms1"></span><br></div><br>
-                                                                    </div>
-
-                                                                 <div class="sms2">
-                                                                          <div class="smallRect"><span id="sms2"></span><br></div><br>
-                                                                     </div>
-
-                                                                        <div class="sms3">
-                                                                                <div class="smallRect"><span id="sms3"></span><br></div><br>
-                                                                            </div>
-
-                                                                            <div class="sms4">
-                                                                                    <div class="smallRect"><span id="sms4"></span><br></div><br>
-                                                                                </div>
-                                                                    </div> -->
-
-                                                                    
-
-
-                                                                
-                                                        </div>
-                                                        <div class="timeDiv">
-                                                                <div class="col-sm 12"><center><span class="time">Timer</span></center></div>
-                                                                <br><br><h2><center><h1 id="Timer">00:00:00</center></h1></h2><br>
-                                                               
-                                                                <button class="sub" id="startTimer">start</button>  
-                                                                <button class="sub" id="PauseTimer">Reset</button>  
-                                                                <!-- <button class="sub" id="LapTimer">Lap</button>   -->
-
-                                                        </div>
-                                                     </div>
-                                            </div>
+                                    <!-- Message screen Div -->
+                                    <div class="messageDiv">
+                                        <div class="col-sm 12"><center><b><span>Message Box</span></b></center></div>
+                                        <div class="sms">
+                                            <div class="smallRect"><span id="name0"></span>-<br><span id="sms0"></span><br></div><br>
+                                            <div class="smallRect"><span id="name1"></span>-<br><span id="sms1"></span><br></div><br>
+                                            <div class="smallRect"><span id="name2"></span>-<br><span id="sms2"></span><br></div><br>
+                                            <div class="smallRect"><span id="name3"></span>-<br><span id="sms3"></span><br></div><br>
+                                            <div class="smallRect"><span id="name4"></span>-<br><span id="sms4"></span><br></div><br>
+                                        </div>
                                     </div>
-                                    <div class="col-sm leftMiddle">
-                                                
+                                    <!-- Time scree Div  -->
+                                    <div class="timeDiv">
+                                            <div class="col-sm 12"><center><span class="time">Timer</span></center></div><br><br>
+                                            <h2><center><h1 id="Timer">00:00:00</center></h1></h2><br>
+                                            <button class="sub" id="startTimer">start</button>  
+                                            <button class="sub" id="PauseTimer">Reset</button>  
+                                            <!-- <div class="lap"> -->
+                                            <button class="sub" id="LapTimer">Lap</button>  
+                                            <!-- <p id="LapInfo"></p> -->
+                                            <!-- </div> -->
+                                         </div>
                                     </div>
-                                            
+                                 </div>
                             </div>
-                            <div class="row lower">
-                                    <div class="col-sm lowerLeft">
-                                      
-                                    </div>
-                                    <div class="col-sm lowerMid">
-                                            <div class="lowerRectangle">
-                                                
-                                                
-                                                <button class="submit" id="music">🎵</button>   
-                                                <button class="submit1" id="message">💬</button>                                                
-                                                <button class="submit2" id="time">🕔</button>
-                                                                                                               
-                                            </div>
-                                        
-                                    </div>
-                                    <div class="col-sm lowerEnd">
-                                      
-                                    </div>
-                            </div>
+                        <div class="col-sm leftMiddle">
+                         </div>
                     </div>
-               </div>
+                    <!-- Lower Row of the watch -->
+                     <div class="row lower">
+                        <div class="col-sm lowerLeft">
+                        </div>
+                     <!-- Lower Mid which shows the buttons        -->
+                        <div class="col-sm lowerMid">
+                            <div class="lowerRectangle">
+                                <button class="submit" id="music">🎵</button>   
+                                <button class="submit1" id="message">💬</button>                                                
+                                <button class="submit2" id="time">🕔</button>
+                            </div>
+                        </div>
+                        <div class="col-sm lowerEnd">
+                        </div>
+                    </div>
+                 </div>
+             </div>
         </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -148,7 +120,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    
 </body>
 <script src="SmartWatchApplication.js"></script>
 </html>

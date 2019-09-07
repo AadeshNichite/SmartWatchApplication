@@ -1,4 +1,4 @@
-
+// This is a javascript file which conatins the js and jQuery coding part.
 
 $(document).ready(function(){
     $(".mainDiv").show();
@@ -16,70 +16,51 @@ $(document).ready(function(){
        if($(".messageDiv").show() && $(".sms").show())
        {
         const msg = [
-            {  name:"Aadesh",sms: "hii...",message2:"How are U?"},
-            {  name:"Sandesh",sms: "where are u??",message2:"I am fine"},
-            {  name:"Kedar",sms: "I am in benglore",message2:"ok ok"},
-            {  name:"Sandip",sms: "ok...",message2:"I am comming"},
-            {  name:"Ashish",sms: "Come ASAP..",message2:"ok by.."}
+            {  name:"Aadesh",sms: "hii..."},
+            {  name:"Sandesh",sms: "where are u??"},
+            {  name:"Kedar",sms: "I am in benglore"},
+            {  name:"Sandip",sms: "ok..."},
+            {  name:"Ashish",sms: "Come ASAP.."}
         
         ];
-        // var i;
-        // for(i=0;i<msg.length;i++)
-        // {
-        //     var temp=document.getElementById("sms1").innerHTML=msg[i].name;
-        //     console.log(temp);
-        // }
         document.getElementById("name0").innerHTML=msg[0].name;
         document.getElementById("name1").innerHTML=msg[1].name;
         document.getElementById("name2").innerHTML=msg[2].name;
         document.getElementById("name3").innerHTML=msg[3].name;
         document.getElementById("name4").innerHTML=msg[4].name;
     
-
-        
-        // $(".sms0").hide();
         document.getElementById("sms0").innerHTML=msg[0].sms;
         document.getElementById("sms1").innerHTML=msg[1].sms;
         document.getElementById("sms2").innerHTML=msg[2].sms;
         document.getElementById("sms3").innerHTML=msg[3].sms;
         document.getElementById("sms4").innerHTML=msg[4].sms;
 
-      
-       };
-       
-       
+       };  
       
     });
-    // if($("#sms0").click(function())
-    //    {
-    //     $(".sms0").show();
 
-    //    });
     
-    
-        var today = new Date();
-        var time1 = (
-        today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-        )
-        document.getElementById("currentTime").innerHTML = time1;
+     var today = new Date();
+     var time1 = (
+     today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+            )
+    document.getElementById("currentTime").innerHTML = time1;
 
         $("#music").click(function(){
-            $(".musicDiv").show();
-            $(".playMusic").show();
-              $(".mainDiv").hide();
-              $(".messageDiv").hide();
-              $(".timeDiv").hide();
-              $(".sms").hide();
-              
-            
-              
-            });
 
-            $("#time").click(function(){
+                    $(".musicDiv").show();
+                    $(".playMusic").show();
+                    $(".mainDiv").hide();
+                    $(".messageDiv").hide();
+                    $(".timeDiv").hide();
+                    $(".sms").hide(); 
+                                    });
+
+        $("#time").click(function(){
+                
                 var timer = document.getElementById('Timer');
                 var toggleBtn = document.getElementById('startTimer');
                 var resetBtn = document.getElementById('PauseTimer');
-                
                 var watch = new Stopwatch(timer);
                 
                 function start() {
@@ -98,6 +79,10 @@ $(document).ready(function(){
                 
                 resetBtn.addEventListener('click', function() {
                   watch.reset();
+                })
+                // new
+                $("#LapTimer").click(function(){
+                    watch.lap();
                 })
                 
                 function Stopwatch(elem) {
@@ -124,23 +109,24 @@ $(document).ready(function(){
                     function timeFormatter(time) {
                       time = new Date(time);
                   
+                      var hours = time.getHours().toString();
                       var minutes = time.getMinutes().toString();
                       var seconds = time.getSeconds().toString();
-                      var milliseconds = time.getMilliseconds().toString();
                   
-                      if (minutes.length < 1) {
+                      if (hours.length < 2) {
+                       hours = '0' + hours;
+                      }
+                  
+                      if (minutes.length < 2) {
                         minutes = '0' + minutes;
                       }
                   
-                      if (seconds.length < 1) {
+                      while (seconds.length < 2) {
                         seconds = '0' + seconds;
                       }
-                  
-                      while (milliseconds.length <=1) {
-                        milliseconds = '0' + milliseconds;
-                      }
-                  
-                      return minutes + ' : ' + seconds + ' : ' + milliseconds;
+                      hours='00'+hours-05;
+                      minutes='00'+minutes-30;
+                      return hours + '0:0' + minutes + ':' + seconds;
                     }
                   
                     this.start = function() {
@@ -159,27 +145,25 @@ $(document).ready(function(){
                       time = 0;
                       update();
                     };
+
+                    // new
+                    this.lap = function(){
+                             
+                         var laplbltxt = document.createTextNode("lap"+" - "+this.hours+":"+this.minutes+":"+this.seconds);    
+                         var lap = document.getElementById("LapInfo");
+                         lap.appendChild(laplbltxt);   
+                         console.log(laplbltxt);
+                    }
                   
                     this.isOn = false;
                   }
-                $(".mainDiv").hide();
-                $(".timeDiv").show();
-                $(".messageDiv").hide();
-                  $(".musicDiv").hide();
-                  $(".sms").hide();
-                //   $(".mainRect").hide();
+                    $(".mainDiv").hide();
+                    $(".timeDiv").show();
+                    $(".messageDiv").hide();
+                    $(".musicDiv").hide();
+                    $(".sms").hide();
+                    
               });
-
-            //   $(".smallRect").click(function(){
-            //     $(".mainDiv").hide();
-            //     $(".mainRect").show();
-            //     $(".timeDiv").hide();
-            //     $(".messageDiv").hide();
-            //       $(".musicDiv").hide();
-            //       $(".sms").hide();
-            //   });
-        
-       
     
   });
  
