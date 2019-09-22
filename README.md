@@ -1,8 +1,4 @@
 # Smart Watch Application
-## Objective : Objective of this application is to give time and additional features.
-
-    
-# Smart Watch Application
 
 Simple canvas game using HTML,CSS,javaScript,jquery,Bootstrap.
 
