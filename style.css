@@ -139,18 +139,21 @@ span{
       border-radius: 90px;
       display: inline;
       margin-top: 0.5vh;
+      outline: none;
   }
   .submit1
   {
       background-color: var( --color-2);
       border-radius: 90px;
       display: inline;
+      outline: none;
   }
   .submit2
   {
       background-color: var( --color-2);
       border-radius: 90px;
       display: inline;
+      outline: none;
   }
   .messageDiv{
       height: 30vh;
