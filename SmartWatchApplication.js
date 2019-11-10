@@ -16,28 +16,7 @@ $(document).ready(function()
     $(".timeDiv").hide();
     $(".playMusic").hide();
     $(".sms0").hide();
-
-    if($(".messageDiv").show() && $(".sms").show())
-    {
-      const msg = [
-          {  name:"Aadesh",sms: "hii..."},
-          {  name:"Sandesh",sms: "where are u??"},
-          {  name:"Kedar",sms: "hello"},
-          {  name:"Sandip",sms: "How are u?"},
-          {  name:"Ashish",sms: "Hi.."}
-      ];
-
-      document.getElementById("name0").innerHTML=msg[0].name;
-      document.getElementById("name1").innerHTML=msg[1].name;
-      document.getElementById("name2").innerHTML=msg[2].name;
-      document.getElementById("name3").innerHTML=msg[3].name;
-      document.getElementById("name4").innerHTML=msg[4].name;
-      document.getElementById("sms0").innerHTML=msg[0].sms;
-      document.getElementById("sms1").innerHTML=msg[1].sms;
-      document.getElementById("sms2").innerHTML=msg[2].sms;
-      document.getElementById("sms3").innerHTML=msg[3].sms;
-      document.getElementById("sms4").innerHTML=msg[4].sms;
-      };  
+     
   });
 
     
