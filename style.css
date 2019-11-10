@@ -1,4 +1,6 @@
-/* stylesheet which contains the stylesheet about the smart watch application html */
+/* Author:Aadesh Nichite
+Project:Smart Watch Application using html,css,javascript,jQuery and bootstrap 
+stylesheet which contains the stylesheet about the smart watch application html */
 
 :root{
     --color-1:rgb(0, 204, 255);
@@ -197,7 +199,7 @@ span{
   .playMusic
   {
     width: 100%;
-    height: 110%;
+    height: 130%;
   }  
    .playMusic iframe
   {
