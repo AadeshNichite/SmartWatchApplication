@@ -1,4 +1,7 @@
+// Author:Aadesh Nichite
+// Project:Smart Watch Application using html,css,javascript,jQuery and bootstrap  
 // This is a javascript file which conatins the js and jQuery coding part.
+
 $(document).ready(function()
 {
     $(".mainDiv").show();
