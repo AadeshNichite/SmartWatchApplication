@@ -159,7 +159,8 @@ span{
   .messageDiv{
       height: 30.5vh;
       display: none; 
-      overflow: auto; 
+      overflow: auto;
+      /* overflow: hidden;  */
   }
   .timeDiv{
     display: none;
